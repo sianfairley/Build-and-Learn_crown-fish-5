@@ -4,9 +4,10 @@
   <head>
     <meta charset="utf-8">
     <title> Learntocode: Build-And-Learn </title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
   </head>
 
-  <body>
+  <body class="wrapper">
 
     <header id="home">
       <nav>
@@ -18,34 +19,52 @@
           <li> <a href='#sign-up'> Sign up </a> </li>
         </ul>
       </nav>
-      <div id="main-header"> <h1> Build and Learn: work together, create projects, gain experience </h1> </div>
+      <div id="main-header">
+        <h1> Build and Learn: work together, create projects, gain experience </h1>
+      </div>
     </header>
 
     <main>
 
       <section id="about">
         <h2> About Build and Learn </h2>
-        <p> This is a place for everyone who eager to learn, build and collaborate. </p>
-        <img class='icon' src='img/web.svg' alt='web development'>
-          <h3> Web Development </h3>
-            <p> Insert text about web development track. </p>
-        <img class='icon' src='img/android.svg' alt='android development'>
-          <h3> Android Development </h3>
-            <p> Insert text about Android development track. </p>
-        <img class='icon' src='img/ios.svg' alt='ios development'>
-          <h3> iOS Development </h3>
-            <p> Insert text about iOS development track. </p>
+        <p id="headertext"> This is a place for everyone who eager to learn, build and collaborate. </p>
+        <img class='icon' id="icon1" src='img/web.svg' alt='web development'>
+          <h3 id="webdevheader"> Web Development </h3>
+            <p id="webdevtext"> Insert text about web development track. </p>
+        <img class='icon' id="icon2" src='img/android.svg' alt='android development'>
+          <h3 id="androidheader"> Android Development </h3>
+            <p id="androidtext"> Insert text about Android development track. </p>
+        <img class='icon' id="icon3" src='img/ios.svg' alt='ios development'>
+          <h3 id="iosheader"> iOS Development </h3>
+            <p id="iostext"> Insert text about iOS development track. </p>
       </section>
 
       <section id="projects">
-        <h2> Previous projects </h2>
+        <h2> Latest group projects </h2>
         <!-- Timeline option previous V1, V2, V3 -->
-        <div>
-          <img src="">
-          <h3> Title of project </h3>
+        <div id="flipcard-wrapper">
+          <div>
+            <img class="photo" src="img/project-1.jpg" alt="build and learn project example">
+          </div>
+          <div>
+            <img class="photo" src="img/project-2.jpg" alt="build and learn project example">
+          </div>
+          <div>
+            <img class="photo" src="img/project-3.jpg" alt="build and learn project example">
+          </div>
+          <div>
+            <img class="photo" src="img/project-4.jpg" alt="build and learn project example">
+          </div>
+          <div>
+            <img class="photo" src="img/project-5.jpg" alt="build and learn project example">
+          </div>
+          <div>
+            <img class="photo" src="img/project-6.jpg" alt="build and learn project example">
+          </div>
+        </div>
           <!-- show team members  -->
           <!-- Link to github page of project -->
-        </div>
       </section>
 
       <section id="reviews">
