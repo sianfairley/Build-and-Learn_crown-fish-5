@@ -16,6 +16,13 @@ body {
 		line-height: 1.3;
 }
 
+.credits,
+.credits a {
+	font-size: 7px;
+	color: grey;
+	text-decoration: none;
+}
+
 /* Responsive flexbox navigation */
 
 nav ul {
@@ -196,5 +203,51 @@ h1 {
 .wrapper {
 	grid-template-columns: 10px 1fr 10px;
 }
+
+}
+
+/* mobile menu */
+
+/* on large screens hide checkbox and menu icon */
+
+@media (min-width: 870px) {
+
+	input#menu,
+	.collapsible-menu label {
+		display: none;
+	}
+
+}
+
+/* on small screens*/
+
+@media (max-width: 870px) {
+
+/* style mobile menu icon */
+	.menu-icon {
+		width: 20px;
+		padding: 10px;
+	}
+
+/* add pointer to icon */
+	.collapsible-menu label {
+	    cursor: pointer;
+	}
+
+/* hide menu-content when closed */
+	.menu-content {
+	max-height: 0;
+	overflow: hidden;
+	}
+
+/* hide checkbox */
+	input#menu {
+		display: none;
+	}
+
+/* when radiobox is checked (menu-icon is clicked) show menu-content */
+	input:checked ~ .menu-content {
+	    max-height: 100%;
+	}
 
 }
