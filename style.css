@@ -73,7 +73,7 @@ nav a{
   position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
 }
 
 	h1,
@@ -161,12 +161,103 @@ nav a{
 		grid-area: P3;
 	}
 
-	@media (max-width: 800px) {
+	@media (max-width: 874px) {
 		#about {
 			display: block;
 			text-align: center;
 		}
 	}
+
+
+/* Header background */
+
+h1 {
+	font-size: 2em;
+	color: white;
+}
+
+#main-header {
+	background-image: url("img/header-img.jpg");
+	background-size: cover;
+	padding: 15% 0;
+}
+
+/* Desktop and mobile menu */
+
+/* hide mobile menu button and mobile navigation menu on big screens */
+
+@media (min-width: 874px) {
+	#button {
+		display: none;
+	}
+
+	#mobile-nav {
+		display:none;
+	}
+
+/* fixed menu styling for large screens */
+
+	#fixed-desktop {
+		margin-top: -20px;
+		padding-bottom: : -20px;
+		height: 100px;
+	}
+
+	/* fix padding fixed menu */
+
+		#about,
+		#projects,
+		#reviews,
+		#sign-up{
+			padding-top: 80px;
+		}
+
+}
+
+/* hide desktop navigation menu on small screens */
+
+@media (max-width: 874px) {
+
+	#desktop-nav {
+		display:none;
+	}
+
+	/*  Fixed menu on mobile */
+
+	#fixed-mobile {
+		padding-top: 10px;
+	}
+
+/* style mobile menu icon  */
+
+	#button {
+		width: 20px;
+		padding: 5px;
+	}
+
+/* fix padding fixed menu */
+
+	#about,
+	#projects,
+	#reviews,
+	#sign-up{
+		padding-top: 20px;
+	}
+
+}
+
+/* fixed header for mobile and desktop */
+
+.fixed {
+	position: fixed;
+	top: 0px;
+	background: white;
+	width: 100%;
+	z-index: 1;
+}
+
+
+
 
 /* Responsive grid for latest projects section */
 
@@ -184,19 +275,6 @@ nav a{
 	height: 200px;
   width: 100%;
   object-fit: cover;
-}
-
-/* Header background */
-
-h1 {
-	font-size: 2em;
-	color: white;
-}
-
-#main-header {
-	background-image: url("img/header-img.jpg");
-	background-size: cover;
-	padding: 15% 0;
 }
 
 /* small screen sizes */
@@ -219,60 +297,14 @@ h1 {
 
 }
 
-/* mobile menu */
-
-/* on large screens hide checkbox and menu icon */
-
-@media (min-width: 870px) {
-
-	input#menu,
-	.collapsible-menu label {
-		display: none;
-	}
-
-}
-
-/* on small screens*/
-
-@media (max-width: 870px) {
-
-/* style mobile menu icon */
-	.menu-icon {
-		width: 20px;
-		padding: 10px;
-	}
-
-/* add pointer to icon */
-	.collapsible-menu label {
-	    cursor: pointer;
-	}
-
-/* hide menu-content when closed */
-	.menu-content {
-	max-height: 0;
-	overflow: hidden;
-	}
-
-/* hide checkbox */
-	input#menu {
-		display: none;
-	}
-
-/* when radiobox is checked (menu-icon is clicked) show menu-content */
-	input:checked ~ .menu-content {
-	    max-height: 100%;
-	}
-
-}
-
 /* parallax effect */
 
-.parallax { 
+.parallax {
     /* The image used */
     background-image: url("https://cdn.glitch.com/59b51472-f195-4103-ab29-496d02eb8dae%2Fheader-img.jpg?1535805969448");
 
     /* Set a specific height */
-    height: 500px; 
+    height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;

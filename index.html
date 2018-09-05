@@ -10,10 +10,22 @@
 
   <body>
 
-    <header class="collapsible-menu">
-      <input type="checkbox" id="menu">
-      <label for="menu"> <img src="img/menu.svg" class="menu-icon"> </label>
-      <nav class="menu-content">
+    <header>
+      <div class="fixed" id="fixed-mobile">
+      <img  src="img/menu.svg" alt="mobile-menu-icon" id="button" onclick="myFunction()">
+      <nav id="mobile-nav">
+        <ul>
+          <li> <a href='#home' onclick="myFunction()"> Home </a> </li>
+          <li> <a href='#about' onclick="myFunction()"> About us </a> </li>
+          <li> <a href='#projects' onclick="myFunction()"> Projects </a> </li>
+          <li> <a href='#reviews' onclick="myFunction()"> Previous learner reviews </a> </li>
+          <li> <a href='#sign-up' onclick="myFunction()"> Sign up </a> </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="fixed" id="fixed-desktop">
+      <nav id="desktop-nav">
         <ul>
           <li> <a href='#home'> Home </a> </li>
           <li> <a href='#about'> About us </a> </li>
@@ -22,9 +34,11 @@
           <li> <a href='#sign-up'> Sign up </a> </li>
         </ul>
       </nav>
+    </div>
+
     <div class="parallax">
       <h1 id="title" > Build and Learn: work together, create projects, gain experience </h1></div>
-     
+
     </header>
 
     <main class="wrapper">
@@ -71,6 +85,7 @@
       </footer>
 
   </main>
+  <script src="script.js"></script>
 
 </body>
 
