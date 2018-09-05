@@ -69,6 +69,13 @@ nav a{
     min-width: 0;
   }
 
+#title {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
 	h1,
 	h2 {
     text-align: center;
@@ -204,6 +211,12 @@ h1 {
 	grid-template-columns: 10px 1fr 10px;
 }
 
+.parallax {
+	background-image: url("https://cdn.glitch.com/59b51472-f195-4103-ab29-496d02eb8dae%2Fheader-img.jpg?1535805969448");
+	background-size: cover;
+	padding: 15% 0;
+}
+
 }
 
 /* mobile menu */
@@ -250,4 +263,20 @@ h1 {
 	    max-height: 100%;
 	}
 
+}
+
+/* parallax effect */
+
+.parallax { 
+    /* The image used */
+    background-image: url("https://cdn.glitch.com/59b51472-f195-4103-ab29-496d02eb8dae%2Fheader-img.jpg?1535805969448");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
