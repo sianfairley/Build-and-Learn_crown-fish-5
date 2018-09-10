@@ -1,12 +1,5 @@
 /*CSS Variables */
 
-:root {
-	--primary: #ddd;
-	--dark: #333;
-	--light: #fff;
-	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-}
-
 html {
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
@@ -27,7 +20,6 @@ body {
 
 nav ul {
 	display: flex;
-	flex-direction: row;
 	justify-content: flex-end;
 	list-style-type: none;
 }
@@ -290,7 +282,7 @@ h1 {
 }
 
 .parallax {
-	background-image: url("https://cdn.glitch.com/59b51472-f195-4103-ab29-496d02eb8dae%2Fheader-img.jpg?1535805969448");
+	background-image: url("img/header-img.jpg");
 	background-size: cover;
 	padding: 15% 0;
 }
@@ -301,7 +293,7 @@ h1 {
 
 .parallax {
     /* The image used */
-    background-image: url("https://cdn.glitch.com/59b51472-f195-4103-ab29-496d02eb8dae%2Fheader-img.jpg?1535805969448");
+    background-image: url("img/header-img.jpg");
 
     /* Set a specific height */
     height: 500px;
