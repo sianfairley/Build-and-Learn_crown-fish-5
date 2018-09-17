@@ -253,13 +253,13 @@ h1 {
 
 /* Responsive grid for latest projects section */
 
-#flipcard-wrapper {
+.flipcard-wrapper {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 	grid-gap: 30px;
 }
 
-#flipcard-wrapper > * {
+.flipcard-wrapper > * {
 	justify-content: center;
 }
 
@@ -273,7 +273,7 @@ h1 {
 
 @media (max-width: 400px) {
 
-#flipcard-wrapper {
+.flipcard-wrapper {
 	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
@@ -356,16 +356,16 @@ h1 {
 	padding: 5px;
 }
 
-#projects-timeline {
-	text-align: center;
-	margin: auto;
-	margin-bottom: -100px;
+/* filter function project page */
+
+input[type="radio"] {
+    display:none;
 }
 
-@media (max-width: 870px) {
-
-#projects-timeline {
-	margin-bottom: 0px;
+input[type="radio"][id="V1"]:checked ~ .V2 {
+	display:none
 }
 
+input[type="radio"][id="V2"]:checked ~ .V1 {
+	display:none
 }
