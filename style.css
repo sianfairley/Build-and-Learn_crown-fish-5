@@ -35,7 +35,7 @@ nav a{
 
 @media (max-width: 870px) {
 
-	nav ul {
+	nav .ul {
 		flex-direction: column;
 		justify-content: center;
 	}
@@ -305,7 +305,6 @@ h1 {
     background-size: cover;
 }
 
-
 /* hover effect */
 
 .container {
@@ -348,4 +347,25 @@ h1 {
   font-size: 16px;
   padding: 16px 32px;
   border-radius: 3px;
+}
+
+/* project page styling */
+
+#back-icon {
+	width: 20px;
+	padding: 5px;
+}
+
+#projects-timeline {
+	text-align: center;
+	margin: auto;
+	margin-bottom: -100px;
+}
+
+@media (max-width: 870px) {
+
+#projects-timeline {
+	margin-bottom: 0px;
+}
+
 }
