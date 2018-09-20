@@ -1,0 +1,97 @@
+/*CSS Variables */
+
+:root {
+	--primary: #ddd;
+	--dark: #333;
+	--light: #fff;
+	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+	/*box-sizing: border-box;*/
+	font-family: 'Dosis', sans-serif;
+}
+
+body{
+	margin: 30px 50px;
+	line-height: 1.4;
+}
+
+.wrapper {
+	display: grid;
+	grid-gap: 20px;
+}
+
+.nav ul {
+	display: grid;
+	grid-gap: 20px;
+	padding: 0;
+	list-style: none;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.nav a {
+	display: block; /*Displays contents in rows, full width */
+	text-decoration: none;
+	padding: 0.8rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+}
+
+.boxes {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	justify-content: center;
+}
+
+.project-images	{	
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+} 
+
+.review {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	
+}
+
+/* Media Queries */
+@media (max-width: 700px) {
+
+	.nav ul {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.boxes {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, 1fr);
+}
+
+	.project-images {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	}
+
+	.review {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 500px) {
+	
+	.nav ul {
+		grid-template-columns: 1fr;
+	}
+}
