@@ -10,11 +10,23 @@
 
   <body>
 
-    <header class="collapsible-menu">
-      <input type="checkbox" id="menu">
-      <label for="menu"> <img src="img/menu.svg" class="menu-icon"> </label>
-      <nav class="menu-content">
-        <ul>
+    <header id="home">
+      <div class="fixed" id="fixed-mobile">
+      <img  src="img/menu.svg" alt="mobile menu icon" id="button" onclick="myFunction()">
+      <nav id="mobile-nav">
+        <ul class="ul">
+          <li> <a href='#home' onclick="myFunction()"> Home </a> </li>
+          <li> <a href='#about' onclick="myFunction()"> About us </a> </li>
+          <li> <a href='#projects' onclick="myFunction()"> Projects </a> </li>
+          <li> <a href='#reviews' onclick="myFunction()"> Previous learner reviews </a> </li>
+          <li> <a href='#sign-up' onclick="myFunction()"> Sign up </a> </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="fixed" id="fixed-desktop">
+      <nav id="desktop-nav">
+        <ul class="ul">
           <li> <a href='#home'> Home </a> </li>
           <li> <a href='#about'> About us </a> </li>
           <li> <a href='#projects'> Projects </a> </li>
@@ -22,9 +34,11 @@
           <li> <a href='#sign-up'> Sign up </a> </li>
         </ul>
       </nav>
-      <div id="main-header">
-        <h1> Build and Learn: work together, create projects, gain experience </h1>
-      </div>
+    </div>
+
+    <div class="parallax">
+      <h1 id="title" > Build and Learn: work together, create projects, gain experience </h1></div>
+
     </header>
 
     <main class="wrapper">
@@ -45,14 +59,55 @@
 
       <section id="projects">
         <h2> Latest group projects </h2>
-        <div id="flipcard-wrapper">
-            <img class="photo" src="img/project-1.jpg" alt="build and learn project example">
-            <img class="photo" src="img/project-2.jpg" alt="build and learn project example">
-            <img class="photo" src="img/project-3.jpg" alt="build and learn project example">
-            <img class="photo" src="img/project-4.jpg" alt="build and learn project example">
-            <img class="photo" src="img/project-5.jpg" alt="build and learn project example">
-            <img class="photo" src="img/project-6.jpg" alt="build and learn project example">
+        <div class="flipcard-wrapper">
+
+
+              <div class="container">
+              <img class="image" src= "img/project-1.jpg" alt="build and learn project example">
+              <div class="middle">
+              <div class="text"> <a class="projectlink" href="#">View Project</a></div>
+              </div>
+            </div>
+
+            <div class="container">
+            <img class="image" src="img/project-2.jpg" alt="build and learn project example">
+            <div class="middle">
+              <div class="text"> <a class="projectlink" href="#">View Project</a></div>
+              </div>
+            </div>
+
+          <div class="container">
+            <img class="image" src="img/project-3.jpg" alt="build and learn project example">
+            <div class="middle">
+              <div class="text"> <a class="projectlink" href="#">View Project</a></div>
+              </div>
+            </div>
+
+             <div class="container">
+            <img class="image" src= "img/project-4.jpg" alt="build and learn project example">
+            <div class="middle">
+              <div class="text"> <a class="projectlink" href="#">View Project</a></div>
+              </div>
+            </div>
+
+            <div class="container">
+            <img class="image" src= "img/project-5.jpg" alt="build and learn project example">
+            <div class="middle">
+              <div class="text"> <a class="projectlink" href="#">View Project</a></div>
+              </div>
+            </div>
+
+            <div class="container">
+            <img class="image" src="img/project-6.jpg" alt="build and learn project example">
+            <div class="middle">
+              <div class="text"> <a class="projectlink" href="#">View Project</a></div>
+              </div>
+            </div>
+
         </div>
+
+        <a href="projects.html"> <button class="project-button"> All Projects </button> </a>
+
       </section>
 
       <section id="reviews">
@@ -71,6 +126,7 @@
       </footer>
 
   </main>
+  <script src="script.js"></script>
 
 </body>
 
